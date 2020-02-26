@@ -1,0 +1,25 @@
+PODS:
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - HKDFKit (0.0.4):
+    - CocoaLumberjack
+
+DEPENDENCIES:
+  - HKDFKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  HKDFKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  HKDFKit: 2c0a1b95f863bdaad5fc0eb617beb5f164689dc9
+
+PODFILE CHECKSUM: fc540cbd55d341c4d55e33cfed3ccd132c6b7ae9
+
+COCOAPODS: 1.8.4

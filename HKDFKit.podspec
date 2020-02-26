@@ -7,36 +7,25 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'HKDFKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HKDFKit.'
+s.name         = "HKDFKit"
+s.version      = "0.0.4"
+s.summary      = "HKDFKit provides Objective-C implementations of HKDF."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.description  = <<-DESC
+HKDFKit additionally supports the TextSecure v2 protocol HKDF.
+DESC
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.homepage     = "https://github.com/Planet-Chat/HKDFKit"
+s.license      = {:type => 'GNU GENERAL PUBLIC LICENSE V2', :file => 'LICENSE'}
+s.author             = { "Frederic Jacobs" => "github@fredericjacobs.com" }
+s.social_media_url = "https://twitter.com/FredericJacobs"
 
-  s.homepage         = 'https://github.com/psven/HKDFKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'psven' => 'onthewayjoey@gmail.com' }
-  s.source           = { :git => 'https://github.com/psven/HKDFKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.source       = { :git => "https://github.com/FredericJacobs/HKDFKit.git", :tag => "0.0.3" }
 
-  s.ios.deployment_target = '8.0'
+s.source_files  = 'HKDFKit/HKDFKit/*{h,m}', 'HKDFKit/Private/*{h,m}'
 
-  s.source_files = 'HKDFKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'HKDFKit' => ['HKDFKit/Assets/*.png']
-  # }
+s.public_header_files = 'HKDFKit/HKDFKit/*.h'
+s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.dependency 'CocoaLumberjack'
 end
